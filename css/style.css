@@ -118,7 +118,7 @@ body {
 	background-image: url("../img/header-fon.jpg");
 	background-repeat: no-repeat;
   background-position: 35% 65%;
-  background-size: cover;
+  background-size: consist;
   width: 100%;
 	min-height: 800px;
   margin-top: 70px;
@@ -203,7 +203,7 @@ body {
 
 @media (max-width: 1600px) {
 	.promo-top {
-	top: calc(100px + (210 - 100) * ((100vw - 320px) / (1600 - 320)));
+	top: calc(120px + (210 - 120) * ((100vw - 320px) / (1600 - 320)));
 }
 
 	.promo-bottom {
