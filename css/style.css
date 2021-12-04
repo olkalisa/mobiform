@@ -125,7 +125,7 @@ body {
  }
 
 .container-main {
-	width: calc(250px + (960 - 250) * ((100vw - 320px) / (1600 - 320)));
+	width: calc(320px + (960 - 320) * ((100vw - 320px) / (1600 - 320)));
 	max-width: 1000px;
 	margin: 0 auto;
 }
@@ -153,8 +153,8 @@ body {
 }
 
 .heading {
-	font-size: calc(36px + (60 - 36) * ((100vw - 320px) / (1600 - 320)));
-	line-height: 48px;
+	font-size: calc(28px + (60 - 28) * ((100vw - 320px) / (1600 - 320)));
+	line-height: calc(32px + (48 - 32) * ((100vw - 320px) / (1600 - 320)));
 	text-transform: uppercase;
 	padding-top: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
 	padding-right: 0;
@@ -166,12 +166,12 @@ body {
 .proposition {
 	margin: 0;
 	padding: 0;
-	font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1600 - 320)));
-	line-height: calc(30px + (36 - 30) * ((100vw - 320px) / (1600 - 320)));
+	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320)));
+	line-height: calc(24px + (36 - 24) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .description {
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-right: 50px;
 	padding-bottom: 25px;
 	padding-left: 50px;
@@ -203,11 +203,11 @@ body {
 
 @media (max-width: 1600px) {
 	.promo-top {
-	top: calc(120px + (210 - 120) * ((100vw - 320px) / (1600 - 320)));
+	top: calc(100px + (210 - 100) * ((100vw - 320px) / (1600 - 320)));
 }
 
 	.promo-bottom {
-	top: calc(180px + (280 - 180) * ((100vw - 320px) / (1600 - 320)));
+	top: calc(160px + (280 - 160) * ((100vw - 320px) / (1600 - 320)));
 }
 }
 
