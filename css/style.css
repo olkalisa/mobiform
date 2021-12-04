@@ -1,11 +1,26 @@
+html,
+body {
+	height: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	max-width: 1920px;
 	background-color: #2d2d2d;
 	font-family: "Roboto", sans-serif;
-  	font-size: 12px;
-  	color: white;
+  font-size: 12px;
+  color: white;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-main {
+	flex: 1 1 auto;
 }
 
 /* Шапка */
@@ -102,14 +117,15 @@ body {
 .page-main-screen {
 	background-image: url("../img/header-fon.jpg");
 	background-repeat: no-repeat;
-  	background-position: bottom left; 
-  	margin-top: 70px; 																				
-  	width: 100%;
-  	min-height: 960px;
-}
+  background-position: 35% 65%;
+  background-size: cover;
+  width: 100%;
+	min-height: 800px;
+  margin-top: 70px;
+ }
 
 .container-main {
-	width: calc(120px + (1040 - 120) * ((100vw - 320px) / (1600 - 320)));
+	width: calc(250px + (960 - 250) * ((100vw - 320px) / (1600 - 320)));
 	max-width: 1000px;
 	margin: 0 auto;
 }
@@ -137,8 +153,8 @@ body {
 }
 
 .heading {
-	font-size: calc(26px + (60 - 26) * ((100vw - 320px) / (1600 - 320)));
-	line-height: calc(24px + (60 - 24) * ((100vw - 320px) / (1600 - 320)));
+	font-size: calc(36px + (60 - 36) * ((100vw - 320px) / (1600 - 320)));
+	line-height: 48px;
 	text-transform: uppercase;
 	padding-top: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
 	padding-right: 0;
@@ -150,15 +166,15 @@ body {
 .proposition {
 	margin: 0;
 	padding: 0;
-	font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1600 - 320)));
-	line-height: calc(18px + (38 - 18) * ((100vw - 320px) / (1600 - 320)));
+	font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1600 - 320)));
+	line-height: calc(30px + (36 - 30) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .description {
 	padding-top: 10px;
-	padding-right: 30px;
+	padding-right: 50px;
 	padding-bottom: 25px;
-	padding-left: 30px;
+	padding-left: 50px;
 }
 
 .proposition {
@@ -187,19 +203,25 @@ body {
 
 @media (max-width: 1600px) {
 	.promo-top {
-	top: calc(550px + (210 - 550) * ((100vw - 320px) / (1600 - 320)));
+	top: calc(120px + (210 - 120) * ((100vw - 320px) / (1600 - 320)));
 }
 
 	.promo-bottom {
-	top: calc(620px + (280 - 620) * ((100vw - 320px) / (1600 - 320)));
+	top: calc(180px + (280 - 180) * ((100vw - 320px) / (1600 - 320)));
+}
 }
 
-	.page-main-screen {
-		height: calc(1200px + (960 - 1200) * ((100vw - 320px) / (1600 - 320)));;
-	}
-
+@media (max-width: 1480px) {
+	.description {
+	padding-right: 20px;
+	padding-left: 20px;
 }
 
+.proposition {
+	padding-right: 25px;
+	padding-left: 25px;
+}
+}
 
 
 
